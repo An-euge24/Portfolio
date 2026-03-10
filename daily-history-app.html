@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histoire du Jour | Andréa MAKILIMA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        .project-details-page { padding-top: 140px; background-color: var(--secondary-color); }
+        .back-link { margin-bottom: 50px; display: inline-flex; align-items: center; gap: 10px; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; font-weight: 700; color: var(--accent-color); text-decoration: none; transition: var(--transition); }
+        .back-link:hover { transform: translateX(-10px); color: var(--hover-color); }
+        .analysis-hero { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; margin-bottom: 100px; align-items: center; }
+        .analysis-img img { width: 100%; border-radius: 20px; box-shadow: 0 40px 80px rgba(0,0,0,0.1); border: 1px solid rgba(0,0,0,0.05); }
+        .workflow {
+            margin-top: 80px;
+            background-color: var(--light-grey);
+            padding: 80px 0;
+        }
+        .workflow-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-top: 60px; }
+        .step { padding: 30px; background: var(--light-grey); border-radius: 20px; transition: var(--transition); text-align: center; }
+        .step:hover { transform: translateY(-10px); background: #fff; box-shadow: var(--shadow-soft); }
+        .step-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        .results-section { padding-bottom: 100px; }
+        .business-impact li {
+            margin-bottom: 15px;
+        }
+        @media (max-width: 992px) { .analysis-hero { grid-template-columns: 1fr; gap: 40px; } .workflow-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+
+<body class="js-active">
+    <header id="header" class="scrolled">
+        <div class="container flex-nav">
+            <a href="index.html" class="logo">AM.</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html#projects">Projets</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="project-details-page">
+        <div class="container">
+            <a href="index.html#projects" class="back-link"><i class="fa-solid fa-arrow-left"></i> Retour aux
+                projets</a>
+
+            <div class="analysis-hero">
+                <div class="analysis-info">
+                    <h1 class="title-serif">Application Intégrée : Histoire du Jour</h1>
+                    <div class="decor-line"></div>
+                    <p class="subtitle italic">Développement d'une web-app via Google Apps Script.</p>
+                    <p class="modal-description">
+                        "L'Histoire du Jour" est une application web dynamique qui génère et affiche des événements
+                        historiques du jour. Développée entièrement avec l'écosystème Google (GAS), elle démontre ma
+                        capacité à créer des outils web légers et interfacés avec des bases de données Spreadsheets.
+                    </p>
+                    <div class="tag-tech" style="margin-top: 30px;">
+                        <span>JavaScript</span><span>Google Apps Script</span><span>Bootstrap</span><span>HTML5 /
+                            CSS3</span>
+                    </div>
+                    <a href="https://script.google.com/a/macros/eugeniaschool.com/s/AKfycbyXhtXHyytO15GDG6Zw--BDqo8Wje63GzL-GnP6Iia0weCq3z00JeHoOuUapJy5Ht0A/exec"
+                        target="_blank" class="btn-primary" style="margin-top: 40px; display: inline-block;">Lancer
+                        l'application en direct</a>
+                </div>
+                <div class="analysis-img">
+                    <img src="history_cover.png" alt="Aperçu App Histoire du Jour">
+                </div>
+            </div>
+
+            <section class="results-section">
+                <h2 class="title-serif">Fonctionnalités & Stack</h2>
+                <div class="workflow-grid" style="margin-bottom: 60px;">
+                    <div class="step">
+                        <div class="step-icon"><i class="fa-solid fa-database"></i></div>
+                        <h3>Gestion de Données</h3>
+                        <p>Stockage et requêtage des archives via Google Sheets utilisé comme backend.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>Serverless</h3>
+                        <p>Logique métier déportée côté serveur via Google Apps Script.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                        <h3>Responsive</h3>
+                        <p>Interface adaptable facilitant la lecture sur terminaux mobiles.</p>
+                    </div>
+                </div>
+                <img src="history_cover.png" alt="Screenshot plein format"
+                    style="width: 100%; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Andréa MAKILIMA</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

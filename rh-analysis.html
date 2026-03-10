@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyse RH - Congé Parental | Andréa MAKILIMA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        .project-details-page { padding-top: 140px; background-color: var(--secondary-color); }
+        .back-link { margin-bottom: 50px; display: inline-flex; align-items: center; gap: 10px; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; font-weight: 700; color: var(--accent-color); text-decoration: none; transition: var(--transition); }
+        .back-link:hover { transform: translateX(-10px); color: var(--hover-color); }
+        .analysis-hero { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; margin-bottom: 100px; align-items: center; }
+        .analysis-img img { width: 100%; border-radius: 20px; box-shadow: 0 40px 80px rgba(0,0,0,0.1); border: 1px solid rgba(0,0,0,0.05); }
+        .results-section { padding-bottom: 100px; }
+        .workflow-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-top: 60px; }
+        .step { padding: 30px; background: var(--light-grey); border-radius: 20px; transition: var(--transition); }
+        .step:hover { transform: translateY(-10px); background: #fff; box-shadow: var(--shadow-soft); }
+        @media (max-width: 992px) { .analysis-hero { grid-template-columns: 1fr; gap: 40px; } .workflow-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body class="js-active">
+    <header id="header" class="scrolled">
+        <div class="container flex-nav">
+            <a href="index.html" class="logo">AM.</a>
+            <nav><ul class="nav-links"><li><a href="index.html#projects">Projets</a></li><li><a href="index.html#contact">Contact</a></li></ul></nav>
+        </div>
+    </header>
+
+    <main class="project-details-page">
+        <div class="container">
+            <a href="index.html#projects" class="back-link"><i class="fa-solid fa-arrow-left"></i> Retour aux projets</a>
+            
+            <div class="analysis-hero">
+                <div class="analysis-info">
+                    <h1 class="title-serif">Focus RH & BI : Congé Parental</h1>
+                    <div class="decor-line"></div>
+                    <p class="subtitle italic">Analyse comparative des politiques de 1 539 entreprises mondiales.</p>
+                    <p class="modal-description">
+                        Ce projet utilise Power BI pour transformer des données RH brutes en insights stratégiques. L'objectif était de cartographier les déséquilibres entre congés maternité et paternité et d'identifier les leaders du secteur en termes de bien-être salarié.
+                    </p>
+                    <div class="tag-tech" style="margin-top: 30px;">
+                        <span>Power BI</span><span>DAX</span><span>Power Query</span><span>HR Analytics</span>
+                    </div>
+                </div>
+                <div class="analysis-img">
+                    <img src="rh_cover.png" alt="Dashboard RH Power BI">
+                </div>
+            </div>
+
+            <section class="results-section">
+                <h2 class="title-serif">Indicateurs Clés (KPIs)</h2>
+                <div class="workflow-grid" style="margin-bottom: 60px;">
+                    <div class="step">
+                        <div class="step-icon"><i class="fa-solid fa-venus-mars"></i></div>
+                        <h3>Équité</h3>
+                        <p>Écart moyen constaté entre les deux types de congés par secteur.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon"><i class="fa-solid fa-award"></i></div>
+                        <h3>Top Performers</h3>
+                        <p>Classement dynamique des 10 entreprises les plus généreuses.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon"><i class="fa-solid fa-earth-europe"></i></div>
+                        <h3>Benchmarks</h3>
+                        <p>Comparaison des moyennes groupe par rapport aux standards mondiaux.</p>
+                    </div>
+                </div>
+                <img src="rh_dashboard.png" alt="Détails du Dashboard" style="width: 100%; border-radius: 4px;">
+            </section>
+        </div>
+    </main>
+
+    <footer><div class="container"><p>&copy; 2026 Andréa MAKILIMA</p></div></footer>
+    <script src="main.js"></script>
+</body>
+</html>

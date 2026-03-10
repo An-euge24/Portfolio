@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyse du Réchauffement Climatique | Andréa MAKILIMA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        .project-details-page { padding-top: 140px; background-color: var(--secondary-color); }
+        .back-link { margin-bottom: 50px; display: inline-flex; align-items: center; gap: 10px; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; font-weight: 700; color: var(--accent-color); text-decoration: none; transition: var(--transition); }
+        .back-link:hover { transform: translateX(-10px); color: var(--hover-color); }
+        .analysis-hero { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; margin-bottom: 100px; align-items: center; }
+        .analysis-img img { width: 100%; border-radius: 20px; box-shadow: 0 40px 80px rgba(0,0,0,0.1); border: 1px solid rgba(0,0,0,0.05); }
+        .results-section { padding-bottom: 100px; }
+        .workflow-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; margin-top: 60px; }
+        .step { padding: 30px; background: var(--light-grey); border-radius: 20px; transition: var(--transition); text-align: center; }
+        .step:hover { transform: translateY(-10px); background: #fff; box-shadow: var(--shadow-soft); }
+        .code-snippet { background: #0d1117; border-radius: 20px; padding: 40px; border: 1px solid rgba(255,255,255,0.1); }
+        @media (max-width: 992px) { .analysis-hero { grid-template-columns: 1fr; gap: 40px; } .workflow-grid { grid-template-columns: 1fr 1fr; } }
+    </style>
+</head>
+<body class="js-active">
+    <header id="header" class="scrolled">
+        <div class="container flex-nav">
+            <a href="index.html" class="logo">AM.</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html#experience">Expérience</a></li>
+                    <li><a href="index.html#projects">Projets</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="project-details-page">
+        <div class="container">
+            <a href="index.html#projects" class="back-link"><i class="fa-solid fa-arrow-left"></i> Retour aux projets</a>
+            
+            <div class="analysis-hero">
+                <div class="analysis-info">
+                    <h1 class="title-serif">Analyse du Réchauffement Climatique</h1>
+                    <div class="decor-line"></div>
+                    <p class="subtitle italic" style="margin-bottom: 30px;">"Vérification des tendances thermiques mondiales via Python & Meteostat API"</p>
+                    <p class="modal-description">
+                        Ce projet a pour objectif de vérifier les assertions de l'Agence de Protection de l'Environnement U.S. (EPA) concernant l'augmentation différenciée des températures selon les saisons. En exploitant les données historiques de 1999 à 2023, l'analyse démontre mathématiquement l'évolution climatique par zone géographique.
+                    </p>
+                    <div class="tag-tech" style="margin-top: 30px;">
+                        <span>Python</span><span>Pandas</span><span>API Meteostat</span><span>BeautifulSoup</span><span>Seaborn</span>
+                    </div>
+                </div>
+                <div class="analysis-img">
+                    <img src="project2.png" alt="Visualisation Trends Climatiques">
+                </div>
+            </div>
+
+            <div class="code-section">
+                <h2 class="title-serif" style="font-size: 2rem;">Le Pipeline de Données</h2>
+                <p>Extraction automatisée et classification saisonnière des températures moyennes.</p>
+                <div class="code-snippet">
+<span class="comment"># Acquisition via Meteostat API</span>
+<span class="keyword">import</span> requests
+<span class="keyword">import</span> pandas <span class="keyword">as</span> pd
+
+<span class="comment"># Classification des saisons (Mois -> Saison)</span>
+<span class="keyword">def</span> <span class="method">get_season</span>(month):
+    <span class="keyword">if</span> month <span class="keyword">in</span> [<span class="string">12, 1, 2</span>]: <span class="keyword">return</span> <span class="string">'Hiver'</span>
+    <span class="keyword">elif</span> month <span class="keyword">in</span> [<span class="string">3, 4, 5</span>]: <span class="keyword">return</span> <span class="string">'Printemps'</span>
+    ...
+                </div>
+            </div>
+        </div>
+
+        <section class="workflow">
+            <div class="container">
+                <h2 class="title-serif centree" style="text-align: center;">Méthodologie</h2>
+                <div class="workflow-grid">
+                    <div class="step">
+                        <div class="step-icon"><i class="fa-solid fa-cloud-arrow-down"></i></div>
+                        <h3>Scraping / API</h3>
+                        <p>Requêtes vers Meteostat pour récupérer 24 ans de données météorologiques précises.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon"><i class="fa-solid fa-broom"></i></div>
+                        <h3>Cleaning</h3>
+                        <p>Traitement des valeurs manquantes et normalisation des unités thermiques avec Pandas.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon"><i class="fa-solid fa-layer-group"></i></div>
+                        <h3>Agrégation</h3>
+                        <p>Groupement des données par mois, saisons et années pour identifier les cycles.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                        <h3>Analyse</h3>
+                        <p>Identification des anomalies et validation des hypothèses de réchauffement global.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="results-section">
+            <div class="container">
+                <div class="analysis-hero" style="margin-bottom: 0;">
+                    <div class="analysis-img">
+                        <img src="scraping_result.png" alt="Graphiques de résultats" style="box-shadow: none; border: 1px solid var(--border-color);">
+                    </div>
+                    <div class="analysis-info">
+                        <h2 class="title-serif">Insights Clés</h2>
+                        <ul class="business-impact" style="background: none; border: none; padding: 0;">
+                            <li style="margin-bottom: 20px;">
+                                <strong>Accélération Hivernale :</strong> Les données montrent que l'augmentation de température est 1.5x plus rapide en hiver par rapport aux moyennes estivales.
+                            </li>
+                            <li style="margin-bottom: 20px;">
+                                <strong>Fiabilité :</strong> Pipeline robuste capable de traiter des millions de relevés sans perte d'information.
+                            </li>
+                            <li>
+                                <strong>Automatisation :</strong> Script 100% autonome, de la collecte au reporting visuel.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Andréa MAKILIMA - Expert Data & Tech</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
