@@ -392,33 +392,50 @@
                     </div>
                 </div>
                 <div class="contact-right">
-                <div class="google-form-link">
-                    <p>Vous souhaitez me contacter ?</p>
+    <form id="google-contact-form"
+          action="https://docs.google.com/forms/d/e/1FAIpQLSf4Dk-_XonKIrxP7kLO2mS9B9X-MN-of_xEZv_lRAf9tJqbbA/formResponse"
+          method="POST"
+          target="hidden_iframe"
+          onsubmit="document.getElementById('form-note').textContent='Merci, votre message a bien été envoyé !';">
 
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf4Dk-_XonKIrxP7kLO2mS9B9X-MN-of_xEZv_lRAf9tJqbbA/viewform?usp=header"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="btn btn-primary">
-                        Ouvrir le formulaire de contact
-                    </a>
+        <div class="form-group">
+            <input type="text"
+                   name="entry.997098696"
+                   placeholder="Votre nom"
+                   required>
+        </div>
 
-    <p class="form-note">Je réponds généralement sous 24h</p>
-</div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Votre nom" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="votre@email.com" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Objet de votre message">
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Votre message..." rows="8"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-submit">Envoyer le message</button>
-                        <p class="form-note">Je réponds généralement sous 24h</p>
-                    </form>
+        <div class="form-group">
+            <input type="email"
+                   name="entry.524326985"
+                   placeholder="votre@email.com"
+                   required>
+        </div>
+
+        <div class="form-group">
+            <input type="text"
+                   name="entry.2032762313"
+                   placeholder="Objet de votre message"
+                   required>
+        </div>
+
+        <div class="form-group">
+            <textarea name="entry.776489603"
+                      placeholder="Votre message..."
+                      rows="8"
+                      required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-submit">
+            Envoyer le message
+        </button>
+
+        <p class="form-note" id="form-note">
+            Je réponds généralement sous 24h
+        </p>
+    </form>
+
+    <iframe name="hidden_iframe" style="display: none;"></iframe>
                 </div>
             </div>
         </section>
