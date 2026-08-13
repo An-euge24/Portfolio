@@ -1034,3 +1034,55 @@ footer {
 .code-snippet .string {
     color: #a5d6ff;
 }
+/* Mise en avant de l'application Histoire du jour */
+.featured-project {
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 18px 45px rgba(255, 79, 145, 0.22);
+    position: relative;
+}
+
+.featured-project .project-img-wrapper {
+    position: relative;
+}
+
+.featured-badge {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    z-index: 3;
+    padding: 9px 15px;
+    border-radius: 20px;
+    background: #ff4f91;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.featured-project .btn-card {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 11px 18px;
+    border-radius: 24px;
+}
+
+.featured-project .btn-launch {
+    background: #1683ff;
+    color: #ffffff;
+    border-color: #1683ff;
+}
+
+.featured-project .btn-launch:hover {
+    background: #006bd6;
+    border-color: #006bd6;
+}
