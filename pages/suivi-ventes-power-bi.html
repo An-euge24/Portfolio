@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Suivi des ventes avec Power BI | Andréa MAKILIMA</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        .project-details-page {
+            padding-top: 140px;
+            background-color: var(--secondary-color);
+        }
+
+        .back-link {
+            margin-bottom: 50px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            font-weight: 700;
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .analysis-hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 70px;
+            margin-bottom: 90px;
+            align-items: center;
+        }
+
+        .analysis-img img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        .project-description {
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        .tag-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .tag-tech span {
+            padding: 8px 14px;
+            border-radius: 20px;
+            background: var(--light-grey);
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .project-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .project-section {
+            padding: 80px 0;
+        }
+
+        .project-section h2 {
+            margin-bottom: 25px;
+        }
+
+        .insights-list {
+            padding-left: 20px;
+            line-height: 1.8;
+        }
+
+        .dashboard-image {
+            margin-top: 30px;
+        }
+
+        @media (max-width: 992px) {
+            .analysis-hero {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body class="js-active">
+
+    <header id="header" class="scrolled">
+        <div class="container flex-nav">
+            <a href="../index.html" class="logo">AM.</a>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html#experience">Expérience</a></li>
+                    <li><a href="../index.html#projects">Projets</a></li>
+                    <li><a href="../index.html#skills">Compétences</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="project-details-page">
+        <div class="container">
+
+            <a href="../index.html#projects" class="back-link">
+                <i class="fa-solid fa-arrow-left"></i>
+                Retour aux projets
+            </a>
+
+            <section class="analysis-hero">
+                <div class="analysis-img">
+                    <img src="../images/couverture-suivi-ventes-power-bi.png"
+                         alt="Couverture du projet Power BI Suivi des ventes">
+                </div>
+
+                <div class="analysis-info">
+                    <h1 class="title-serif">
+                        Dashboard de suivi des ventes avec Power BI
+                    </h1>
+
+                    <div class="decor-line"></div>
+
+                    <p class="subtitle italic">
+                        Transformer des données commerciales brutes en outil de pilotage stratégique.
+                    </p>
+
+                    <p class="project-description">
+                        Ce projet consiste à transformer un fichier CSV contenant des données
+                        de ventes et de commandes en un dashboard Power BI interactif.
+                        L’objectif est de permettre une lecture rapide des performances
+                        commerciales et d’identifier les principaux leviers d’action.
+                    </p>
+
+                    <div class="tag-tech">
+                        <span>Power BI</span>
+                        <span>Power Query</span>
+                        <span>DAX</span>
+                        <span>CSV</span>
+                        <span>Data Visualization</span>
+                    </div>
+
+                    <div class="project-actions">
+                        <a href="https://www.loom.com/share/d35081ff37bb43b294432858dd7beb2e"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-primary">
+                            Voir la démonstration vidéo
+                        </a>
+
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7362000136048152576/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-secondary">
+                            Voir la publication LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2 class="title-serif">Objectif du projet</h2>
+
+                <p class="project-description">
+                    L’objectif était de construire une interface visuelle intuitive
+                    permettant de suivre le chiffre d’affaires, le nombre de commandes,
+                    les quantités vendues et la commande moyenne.
+                </p>
+
+                <p class="project-description">
+                    Le dashboard permet également d’analyser les performances selon
+                    la région, le statut des commandes et la période sélectionnée.
+                </p>
+            </section>
+
+            <section class="project-section">
+                <h2 class="title-serif">Indicateurs clés</h2>
+
+                <div class="analysis-hero">
+                    <div class="analysis-img">
+                        <img src="../images/dashboard-suivi-ventes-power-bi.png"
+                             alt="Dashboard Power BI de suivi des ventes">
+                    </div>
+
+                    <div class="analysis-info">
+                        <ul class="insights-list">
+                            <li>
+                                Création d’un KPI sur le chiffre d’affaires total.
+                            </li>
+                            <li>
+                                Suivi du nombre de commandes et des quantités vendues.
+                            </li>
+                            <li>
+                                Calcul de la commande moyenne.
+                            </li>
+                            <li>
+                                Analyse de l’évolution des ventes au cours de l’année.
+                            </li>
+                            <li>
+                                Utilisation de filtres interactifs par région,
+                                statut de commande et période.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2 class="title-serif">Analyse des commandes annulées</h2>
+
+                <div class="analysis-hero">
+                    <div class="analysis-info">
+                        <p class="project-description">
+                            Une analyse complémentaire a été réalisée pour étudier
+                            les commandes annulées selon les régions, les produits
+                            et les périodes.
+                        </p>
+
+                        <p class="project-description">
+                            Cette analyse permet d’identifier les zones nécessitant
+                            une attention particulière et de mieux comprendre les
+                            facteurs pouvant influencer la performance commerciale.
+                        </p>
+                    </div>
+
+                    <div class="analysis-img">
+                        <img src="../images/dashboard-commandes-annulees-power-bi.png"
+                             alt="Analyse Power BI des commandes annulées">
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2 class="title-serif">Compétences mobilisées</h2>
+
+                <ul class="insights-list">
+                    <li>Importation et préparation des données avec Power Query.</li>
+                    <li>Création de mesures et d’indicateurs avec DAX.</li>
+                    <li>Conception d’un dashboard interactif avec Power BI.</li>
+                    <li>Analyse des performances commerciales.</li>
+                    <li>Présentation des résultats pour faciliter la prise de décision.</li>
+                </ul>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Andréa MAKILIMA - Data Analyst & Business Intelligence</p>
+        </div>
+    </footer>
+
+    <script src="../main.js"></script>
+</body>
+</html>
